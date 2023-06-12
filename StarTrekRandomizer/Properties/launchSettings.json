@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "StarTrekRandomizer": {
+      "commandName": "Project",
+      "commandLineArgs": "-t Original Nineties"
+    }
+  }
+}

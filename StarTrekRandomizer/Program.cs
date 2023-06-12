@@ -29,6 +29,7 @@ namespace StarTrekRandomizer
             var showFiles = GetShowList(opts);
             if(showFiles?.Count > 0)
             {
+                showFiles = showFiles.Where(f => !f.EndsWith(".srt")).ToList(); //exclude subtitle files
                 var random = new Random();
                 var episodePath = showFiles[random.Next(0, showFiles.Count)];
                 
